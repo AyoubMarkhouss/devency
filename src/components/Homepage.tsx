@@ -13,7 +13,7 @@ const Home = () => {
         }}
       ></div>
 
-      <div className="pt-36">
+      <div className="pt-36 -mt-10 ">
         <h1 className=" md:max-w-5xl text-6xl md:text-8xl justify-center flex text-center ">
           The best way to predict the future is to create it!
         </h1>
@@ -27,7 +27,7 @@ const Home = () => {
 
       <div className="relative md:-mt-10 flex flex-col md:flex-row items-center mx-6">
         <div className="flex ">
-          <p className="px-3 md:max-w-2xl text-lg md:text-3xl text-justify text-[#B6BBC4] ">
+          <p className="px-3 md:leading-10 md:max-w-2xl text-lg md:text-3xl text-justify text-[#B6BBC4] ">
             Crafting Digital Excellence. Where innovation meets precision, we
             turn ideas into seamless digital experiences. Welcome to a world of
             code, creativity, and unmatched expertise.
