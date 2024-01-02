@@ -13,7 +13,7 @@ const Home = () => {
         }}
       ></div>
 
-      <div className="pt-36 -mt-10 ">
+      <div className="pt-36 -mt-20 md:-mt-10 ">
         <h1 className=" md:max-w-5xl text-6xl md:text-8xl justify-center flex text-center ">
           The best way to predict the future is to create it!
         </h1>
