@@ -9,6 +9,7 @@ import Nav from "@/components/Nav";
 //   weight: "400",
 // });
 import localFont from 'next/font/local'
+import { Footer } from "@/components/Footer";
 const myfont = localFont({ src: "./Fonts/RedHatDisplay-Regular.woff" });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -18,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className={`${myfont.className}`}>
         <Nav />
         <Component {...pageProps} />
-   
+        <Footer/>
       </main>
     </NextUIProvider>
   );

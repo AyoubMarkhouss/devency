@@ -1,6 +1,7 @@
 import React from "react";
-import { Avatar } from "@nextui-org/react";
+import { Avatar, Button, Link } from "@nextui-org/react";
 import Illustration from "./Illustration";
+import Aboutus from "./icons/Aboutus";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         }}
       ></div>
 
-      <div className="pt-36 -mt-20 md:-mt-10 ">
+      <div className="pt-36 -mt-20 md:-mt-28 ">
         <h1 className=" md:max-w-5xl text-6xl md:text-8xl justify-center flex text-center ">
           The best way to predict the future is to create it!
         </h1>
@@ -26,12 +27,21 @@ const Home = () => {
       </div>
 
       <div className="relative md:-mt-10 flex flex-col md:flex-row items-center mx-6">
-        <div className="flex ">
+        <div className="flex flex-col gap-5 ">
           <p className="px-3 md:leading-10 md:max-w-2xl text-lg md:text-3xl text-justify text-[#B6BBC4] ">
             Crafting Digital Excellence. Where innovation meets precision, we
             turn ideas into seamless digital experiences. Welcome to a world of
             code, creativity, and unmatched expertise.
           </p>
+          <Button
+            as={Link}
+            className=" bg-[#9F73AB] text-xl w-48 ml-3 hidden md:flex"
+            href="#"
+            variant="flat"
+          >
+            About-Us
+            <Aboutus />
+          </Button>
         </div>
 
         <Illustration className="md:h-96 md:w-96 h-64 w-64 relative " />
