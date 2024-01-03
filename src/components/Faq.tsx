@@ -94,32 +94,41 @@ export const Faq = () => {
                     height="24"
                   />
                 </svg>
-                <span className="relative">The</span>
+                <span className="relative">FAQ</span>
               </span>{" "}
-              quick, brown fox jumps over a lazy dog
+              Navigator - Your Roadmap to Devency's Expertise
             </h2>
             <p className="text-base text-gray-400 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+              Unlock answers to common questions about Devency's services and
+              processes. Your go-to resource for a swift understanding of our
+              expertise.
             </p>
           </div>
         </div>
         <div className="space-y-4 z-50">
-          <Item title="The quick, brown fox jumps over a lazy dog?">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          <Item title="What services does Devency offer?">
+            Devency specializes in a wide range of IT development services,
+            including web development, mobile app development, software
+            solutions, and more. Explore our Services page for a detailed list.
           </Item>
-          <Item title="The first mate and his Skipper too will do?">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          <Item title="What is the typical development process at Devency?">
+            Our development process involves initial consultation, project
+            planning, design, development, testing, and deployment. We
+            prioritize clear communication and collaboration at every stage.
           </Item>
-          <Item title="Is the Space Pope reptilian!?">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          <Item title="Does Devency provide ongoing support after a project is completed?">
+            Yes, we offer post-launch support and maintenance packages to ensure
+            the continued success and smooth operation of your digital
+            solutions.
           </Item>
-          <Item title="How much money you got on you?">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          <Item title="Is Devency open to collaborations or partnerships?">
+            Absolutely! We value collaborations and partnerships. If you have an
+            idea or proposal, feel free to reach out through our Contact page.
+          </Item>
+          <Item title="How does Devency handle project pricing?">
+            Our pricing is tailored to the specific requirements of each
+            project. We provide detailed quotes after an initial consultation to
+            understand the scope and needs of the project.
           </Item>
         </div>
         <span className="relative inline-block z-0">
