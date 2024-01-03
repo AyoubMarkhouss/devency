@@ -24,7 +24,7 @@ import Logo from "./Logo";
     TagUser,
     Scale,
   } from "./icons/Icons";
-
+import Cheverondown from "./icons/Cheverondown";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -107,7 +107,7 @@ export default function App() {
                   Our services
                 </Button> */}
                 <Link className="text-xl cursor-pointer tracking-wide bg-transparent data-[hover=true]:bg-transparent top-0">
-                  Our services
+                  Our services <Cheverondown className="w-6 pl-1 flex items-center justify-center"/>
                 </Link>
               </DropdownTrigger>
             </NavbarItem>
