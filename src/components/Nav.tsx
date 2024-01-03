@@ -29,7 +29,7 @@ import Cheverondown from "./icons/Cheverondown";
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "About Us", "Our Services", "FAQ"];
+  const menuItems = ["Home", "About-us", "Our Services", "Contact-us", "FAQ" ];
 
   const [navbar, setNavbar] = useState(false);
 
@@ -175,10 +175,10 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="mt-5">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href={`#${item}`} size="lg">
+          <NavbarMenuItem key={`${item}-${index}`} className="h-screen flex justify-center items-center ">
+            <Link className="w-full justify-center flex text-xl tracking-wide" href={`#${item}`} size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
