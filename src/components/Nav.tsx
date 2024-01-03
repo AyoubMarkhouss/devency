@@ -113,7 +113,7 @@ export default function App() {
             </NavbarItem>
             <DropdownMenu
               aria-label="Our services"
-              className="w-[340px]  rounded-xl"
+              className="w-[260px]  rounded-xl"
               itemClasses={{
                 base: "gap-4",
               }}
