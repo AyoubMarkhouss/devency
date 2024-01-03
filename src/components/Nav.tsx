@@ -48,17 +48,17 @@ export default function App() {
 
       <NavbarContent className="sm:hidden pr-3 " justify="center">
         <NavbarBrand>
-          <a href="/">
+          <Link href="/">
             <Logo className="w-24" />
-          </a>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <a href="/">
+          <Link href="/">
             <Logo className="w-24" />
-          </a>
+          </Link>
         </NavbarBrand>
         <div className="flex gap-4 ml-8 text-xl">
           <NavbarItem>
