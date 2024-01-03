@@ -80,6 +80,11 @@ export default function App() {
               Integrations
             </Link>
           </NavbarItem>
+          <NavbarItem>
+            <Link className=" text-xl tracking-wide " href="/faqpage">
+              FAQ
+            </Link>
+          </NavbarItem>
         </div>
       </NavbarContent>
 
