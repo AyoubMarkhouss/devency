@@ -9,15 +9,44 @@ import {
   NavbarItem,
   Link,
   Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
 } from "@nextui-org/react";
 import Logo from "./Logo";
+  import {
+    ChevronDown,
+    Lock,
+    Activity,
+    Flash,
+    Server,
+    TagUser,
+    Scale,
+  } from "./icons/Icons";
+
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Profile", "Dashboard", "Activity", "Analytics", "System"];
+  const menuItems = ["Home", "About Us", "Our Services", "FAQ"];
 
   const [navbar, setNavbar] = useState(false);
+
+
+  
+
+   const icons = {
+     chevron: <ChevronDown fill="currentColor" size={16} height={undefined} width={undefined} />,
+     scale: <Scale className="text-warning" fill="currentColor" size={30} height={undefined} width={undefined} />,
+     lock: <Lock className="text-success" fill="currentColor" size={30} height={undefined} width={undefined} />,
+     activity: (
+       <Activity className="text-secondary" fill="currentColor" size={30} height={undefined} width={undefined} />
+     ),
+     flash: <Flash className="text-primary" fill="currentColor" size={30} height={undefined} width={undefined} />,
+     server: <Server className="text-success" fill="currentColor" size={30} height={undefined} width={undefined} />,
+     user: <TagUser className="text-danger" fill="currentColor" size={30} height={undefined} width={undefined} />,
+   };
 
   const changebg = () => {
     if (window.scrollY >= 100) {
@@ -62,19 +91,64 @@ export default function App() {
         </NavbarBrand>
         <div className="flex gap-4 ml-8 text-xl">
           <NavbarItem>
-            <Link className=" text-xl tracking-wide " href="#">
-              Features
+            <Link className=" text-xl tracking-wide " href="/">
+              Home
             </Link>
           </NavbarItem>
-          <NavbarItem>
-            <Link
-              href="#"
-              aria-current="page"
-              className=" text-xl tracking-wide "
+
+          <Dropdown className="bg-[#161A30]">
+            <NavbarItem>
+              <DropdownTrigger>
+                {/* <Button
+                  disableRipple
+                  className="text-xl  tracking-wide bg-transparent data-[hover=true]:bg-transparent top-0"
+                  endContent={icons.chevron}
+                >
+                  Our services
+                </Button> */}
+                <Link className="text-xl cursor-pointer tracking-wide bg-transparent data-[hover=true]:bg-transparent top-0">
+                  Our services
+                </Link>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu
+              aria-label="Our services"
+              className="w-[340px]  rounded-xl"
+              itemClasses={{
+                base: "gap-4",
+              }}
             >
-              Customers
-            </Link>
-          </NavbarItem>
+              <DropdownItem
+                key="Web Developement"
+                startContent={icons.flash}
+                className="transition  md:hover:bg-[#9F73AB] duration-400 ease-in-out"
+              >
+                Web Developement
+              </DropdownItem>
+              <DropdownItem
+                key="Mobile developement"
+                startContent={icons.flash}
+                className="transition  md:hover:bg-[#9F73AB] duration-400 ease-in-out"
+              >
+                Mobile developement
+              </DropdownItem>
+              <DropdownItem
+                key="UX/UI Design"
+                startContent={icons.flash}
+                className="transition  md:hover:bg-[#9F73AB] duration-400 ease-in-out"
+              >
+                UX/UI Design
+              </DropdownItem>
+
+              <DropdownItem
+                key="supreme_support"
+                startContent={icons.flash}
+                className="transition  md:hover:bg-[#9F73AB] duration-400 ease-in-out"
+              >
+                +Supreme Support
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
           <NavbarItem>
             <Link className=" text-xl tracking-wide " href="#">
               Integrations
@@ -104,18 +178,7 @@ export default function App() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full"
-              color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              href="#"
-              size="lg"
-            >
+            <Link className="w-full" href={`#${item}`} size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
