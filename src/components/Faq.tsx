@@ -96,12 +96,12 @@ export const Faq = () => {
                 </svg>
                 <span className="relative">FAQ</span>
               </span>{" "}
-              Navigator - Your Roadmap to Devency's Expertise
+              Navigator - Your Roadmap to Devency&apos;s Expertise
             </h2>
             <p className="text-base text-gray-400 md:text-lg">
-              Unlock answers to common questions about Devency's services and
-              processes. Your go-to resource for a swift understanding of our
-              expertise.
+              Unlock answers to common questions about Devency&apos;s services
+              and processes. Your go-to resource for a swift understanding of
+              our expertise.
             </p>
           </div>
         </div>
