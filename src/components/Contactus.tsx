@@ -39,7 +39,7 @@ const Contactus: React.FC = () => {
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6 m-6">
             <h1 className="text-5xl md:font-semibold text-lightviolet  lg:text-6xl ">
-              We'd Love to Hear From You!
+              We&apos;d Love to Hear From You!
             </h1>
 
             <div className="mt-6 space-y-8 md:mt-8 ">
