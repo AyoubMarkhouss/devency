@@ -5,7 +5,7 @@ const Aboutuspage = () => {
   return (
     <section className="mt-12" id="About-us" >
       
-      <div className="container  md:px-12 py-10 mx-auto">
+      <div className="container  md:px-24 py-10 mx-auto">
         
         <h1 className="tracking-wider text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
           The Devency Perspective
@@ -117,7 +117,7 @@ const Aboutuspage = () => {
               </div>
             </div>
 
-            <div className=" lg:flex pl-2 md:pl-16">
+            <div className=" lg:flex pl-2 md:pl-20 drop-shadow-lg ">
               {/* <Image width={448} height={448} className="flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" alt='logo' src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
                */}
               <Logo />

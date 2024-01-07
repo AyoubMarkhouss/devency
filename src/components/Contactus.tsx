@@ -168,6 +168,7 @@ const Contactus: React.FC = () => {
                         className="mt-1 block w-full rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-lightviolet"
                         name="full_name"
                         id="full_name"
+                        required
                       />
                     </div>
 
@@ -178,6 +179,7 @@ const Contactus: React.FC = () => {
                         name="phone"
                         id="phone"
                         type="tel"
+                        required
                       />
                     </div>
                   </div>
@@ -188,6 +190,7 @@ const Contactus: React.FC = () => {
                       name="user_email"
                       id="email"
                       type="email"
+                      required
                     />
                   </div>
 
@@ -198,6 +201,7 @@ const Contactus: React.FC = () => {
                       id="message"
                       name="message"
                       rows={4}
+                      required
                     ></textarea>
                   </div>
 

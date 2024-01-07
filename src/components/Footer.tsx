@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6 ">
           <div className="md:max-w-md grid lg:col-span-2">
             <Link href="/">
-              <Logo className="w-56" />
+              <Logo className="w-56 drop-shadow-lg" />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4 ">
