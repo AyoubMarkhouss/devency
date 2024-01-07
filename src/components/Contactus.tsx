@@ -38,7 +38,7 @@ const Contactus: React.FC = () => {
       <div className="container px-2 sm:px-6 md:px-8 lg:px-14 xl:px-36 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6 m-6">
-            <h1 className="text-5xl md:font-semibold text-lightviolet  lg:text-6xl ">
+            <h1 className="text-5xl md:font-semibold text-white  lg:text-6xl ">
               We&apos;d Love to Hear From You!
             </h1>
             <div className="">
