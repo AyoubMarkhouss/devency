@@ -18,7 +18,7 @@ const Contactus: React.FC = () => {
 
       .then(
         () => {
-          toast.success("message send");
+          toast.success("message sent!");
         },
         () => {
           toast.error("something wrong");
@@ -41,6 +41,11 @@ const Contactus: React.FC = () => {
             <h1 className="text-5xl md:font-semibold text-lightviolet  lg:text-6xl ">
               We&apos;d Love to Hear From You!
             </h1>
+            <div className="">
+              <span className="inline-block w-36 md:w-64 h-1 bg-[#9F73AB] rounded-full"></span>
+              <span className="inline-block w-14 h-1 ml-1 bg-[#9F73AB] rounded-full"></span>
+              <span className="inline-block w-5 h-1 ml-1 bg-[#9F73AB] rounded-full"></span>
+            </div>
 
             <div className="mt-6 space-y-8 md:mt-8 ">
               <p className="flex items-start -mx-2">
