@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Letter from "./icons/Letter";
 
 const Contactus: React.FC = () => {
   const form = useRef(null);
@@ -157,7 +158,7 @@ const Contactus: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-8 lg:w-1/2 lg:mx-6 m-5">
+          <div className="mt-8 lg:w-1/2 lg:mx-6 m-5 z-50">
             <div className="w-full p-3 md:px-8 md:py-10 mx-auto overflow-hidden md:bg-[#EEF0E5] bg-slate-50 backdrop-blur-xl rounded-lg  lg:max-w-xl ">
               <div className="mt-3">
                 <form className="text-darkbg" ref={form} onSubmit={sendmail}>
@@ -225,6 +226,7 @@ const Contactus: React.FC = () => {
         theme="light"
         autoClose={2000}
       />
+      <Letter className="hidden lg:flex md:w-96 md:h-[379px] md:absolute md:-mt-[350px] md:ml-[440px] md:z-10" />
     </div>
   );
 };
