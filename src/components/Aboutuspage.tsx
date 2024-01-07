@@ -1,11 +1,13 @@
-import React from 'react'
-import Image from 'next/image'
-import Logo from './Logo'
+import React from "react";
+import Image from "next/image";
+import Logo from "./Logo";
 const Aboutuspage = () => {
   return (
-    <section className="mt-12">
+    <section className="mt-12" id="About-us" >
+      
       <div className="container  md:px-12 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
+        
+        <h1 className="tracking-wider text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
           The Devency Perspective
         </h1>
 
@@ -125,6 +127,6 @@ const Aboutuspage = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Aboutuspage
+export default Aboutuspage;

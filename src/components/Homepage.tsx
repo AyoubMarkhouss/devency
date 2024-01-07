@@ -5,7 +5,7 @@ import Aboutus from "./icons/Aboutus";
 
 const Home = () => {
   return (
-    <main className="flex flex-col justify-center items-center h-[calc(100vh_-_90px)]">
+    <main className="flex flex-col justify-center items-center h-[calc(100vh_-_90px)]" id="Home">
       <div
         className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[600px]"
         style={{
