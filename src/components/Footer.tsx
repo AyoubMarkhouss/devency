@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import Typing from "./Typing";
+import { Button } from "@nextui-org/react";
 
 export const Footer = () => {
   return (
@@ -15,120 +17,27 @@ export const Footer = () => {
         />
       </svg>
       <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6 ">
-          <div className="md:max-w-md grid lg:col-span-2">
+        <div className="md:flex-row mb-8 md:justify-between flex flex-col">
+          <div className="md:max-w-md ">
             <Link href="/">
               <Logo className="w-56 drop-shadow-lg" />
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4 ">
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Category
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    News
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    World
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Cherry
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Web
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    eCommerce
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Apples
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Media
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Brochure
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Nonprofit
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Business
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Infopreneur
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Personal
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Wiki
-                  </Link>
-                </li>
-              </ul>
+          <div className="flex-col w-full">
+            <h1 className="mb-6 text-4xl font-semibold text-center text-white lg:text-7xl md:text-5xl">
+              Let&apos;s build your <br className="sm:hidden" />
+              <Typing />
+            </h1>
+            
+            <div className="flex flex-wrap justify-center space-y-4 space-x-4">
+              <Button
+                as={Link}
+                className=" bg-lightviolet text-xl w-48  flex"
+                href="/contactpage"
+                variant="flat"
+              >
+                Contact us
+              </Button>
             </div>
           </div>
         </div>
