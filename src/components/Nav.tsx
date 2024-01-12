@@ -165,7 +165,7 @@ export default function App() {
                 </Button> */}
                 <Link className="text-xl cursor-pointer tracking-wide bg-transparent data-[hover=true]:bg-transparent top-0">
                   Our services{" "}
-                  <Cheverondown className="w-6 pl-1 flex items-center justify-center" />
+                  <Cheverondown className="w-6 pl-1 fill-white flex items-center justify-center" />
                 </Link>
               </DropdownTrigger>
             </NavbarItem>
