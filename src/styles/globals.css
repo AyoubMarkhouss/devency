@@ -95,7 +95,8 @@
 .navbar.active{
     /* background: linear-gradient(90deg, rgb(4, 4, 4) 0%, rgb(106, 114, 126) 100%); */
     /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
-   background-color: #624F82;
+   /* background-color: #624F82; */
+   background: linear-gradient(to right,#9F73AB ,#624F82);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border:1px solid rgba(255, 255, 255, 0.18);

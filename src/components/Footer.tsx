@@ -17,10 +17,10 @@ export const Footer = () => {
         />
       </svg>
       <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="md:flex-row mb-8 md:justify-between flex flex-col">
-          <div className="md:max-w-md ">
+        <div className="md:flex-row mb-7 md:mb-0 md:justify-between flex flex-col">
+          <div className="md:max-w-md flex items-center justify-center pl-10">
             <Link href="/">
-              <Logo className="w-56 drop-shadow-lg" />
+              <Logo className="md:w-64 pb-8 md:pb-0 drop-shadow-lg" />
             </Link>
           </div>
           <div className="flex-col w-full">
@@ -29,7 +29,7 @@ export const Footer = () => {
               <Typing />
             </h1>
             
-            <div className="flex flex-wrap justify-center space-y-4 space-x-4">
+            <div className="flex flex-wrap md:hidden justify-center space-y-4 space-x-4">
               <Button
                 as={Link}
                 className=" bg-lightviolet text-xl w-48  flex"
@@ -41,7 +41,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
+        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-darkbg sm:flex-row">
           <p className="text-sm text-gray-100">
             © Copyright 2024 Devency. All rights reserved.
           </p>

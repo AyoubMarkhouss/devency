@@ -132,7 +132,7 @@ export default function App() {
       <NavbarContent className="sm:hidden  " justify="center">
         <NavbarBrand>
           <Link href="/">
-            <Logo className="w-24" />
+            <Logo className="w-32" />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -143,7 +143,7 @@ export default function App() {
       >
         <NavbarBrand>
           <Link href="/">
-            <Logo className="w-24 " />
+            <Logo className="w-36 -mt-1 drop-shadow-lg" />
           </Link>
         </NavbarBrand>
         <div className="flex gap-4 ml-8 text-xl">
