@@ -106,7 +106,7 @@ const Services = () => {
               <Image alt="" src="/promotion.gif" width={100} height={100} />
             </div>
             <p className="text-sm text-gray-900 text-justify">
-              Maximize your online presence with Devency&pos;s social media
+              Maximize your online presence with Devency&apos;s social media
               expertise. From content creation to strategic campaigns, we
               connect your brand with the right audience.
             </p>
