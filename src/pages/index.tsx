@@ -15,6 +15,7 @@ export default function Home() {
       <Homepage />
       <About />
      <Whyus/>
+     <Services/>
     </main>
   );
 }
