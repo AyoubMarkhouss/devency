@@ -60,7 +60,7 @@ export default function Home() {
   }, [inView]);
 
   return (
-    <div className="relative overflow-hidden my-32 px-4 md:px-0" id="about">
+    <div className="relative overflow-hidden my-20 px-4 md:px-0" id="about">
       
       <div className="max-w-6xl mx-auto ">
         <div className=" rounded-t-3xl md:rounded-bl-3xl md:rounded-tr-none relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-0 lg:flex lg:items-center lg:h-[75vh]">

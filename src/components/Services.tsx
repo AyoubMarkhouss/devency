@@ -1,9 +1,59 @@
-import React from "react";
+
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 
 const Services = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  ////////////////title
+  const title = () => {
+    gsap.fromTo(
+      ".tit",
+      { opacity: 0, y: -100 },
+      { opacity: 1, duration: 1, y: 0 }
+    );
+  };
+  useEffect(() => {
+    if (inView) {
+      title();
+    }
+  }, [inView]);
+  ////////////////////card
+  const card = () => {
+    gsap.fromTo(
+      ".card1",
+      { opacity: 0, y: -50, delay: 0 },
+      { opacity: 1, duration: 0.4, y: 0, delay: 0.2, rotateX: 360 }
+    );
+    gsap.fromTo(
+      ".card2",
+      { opacity: 0, y: -50, delay: 0 },
+      { opacity: 1, duration: 0.4, y: 0, delay: 0.4, rotateX: 360 }
+    );
+    gsap.fromTo(
+      ".card3",
+      { opacity: 0, y: -50, delay: 0 },
+      { opacity: 1, duration: 0.4, y: 0, delay: 0.6, rotateX: 360 }
+    );
+    gsap.fromTo(
+      ".card4",
+      { opacity: 0, y: -50, delay: 0 },
+      { opacity: 1, duration: 0.4, y: 0, delay: 0.8, rotateX: 360 }
+    );
+  };
+  useEffect(() => {
+    if (inView) {
+      card();
+    }
+  }, [inView]);
   return (
-    <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-36">
+    <div
+      className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
+      id="services"
+    >
       <div
         className="absolute inset-0 blur-[135px] max-w-lg h-[700px] mx-auto sm:max-w-5xl sm:h-[700px]"
         style={{
@@ -11,8 +61,9 @@ const Services = () => {
             "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
         }}
       ></div>
+      
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-2 text-3xl font-semibold tracking-wide text-white sm:text-6xl md:mx-auto">
+        <h2 className="tit max-w-lg mb-2 text-3xl font-semibold tracking-wide text-white sm:text-6xl md:mx-auto">
           {/* <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -50,8 +101,12 @@ const Services = () => {
           our references!
         </p>
       </div>
+      
       <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
-        <div className="shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl hover:-translate-y-2">
+        <div
+          ref={ref}
+          className="card1 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
+        >
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h3 className="mb-2 font-semibold leading-7 text-darkviolet text-3xl">
               App & Web Developement
@@ -67,7 +122,10 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl hover:-translate-y-2">
+        <div
+          ref={ref}
+          className="card2 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
+        >
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-3xl text-darkviolet">
               Branding & Identity
@@ -82,7 +140,10 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl hover:-translate-y-2">
+        <div
+          ref={ref}
+          className="card3 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
+        >
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-darkviolet text-3xl">
               Traffic Acquisition
@@ -97,7 +158,10 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl hover:-translate-y-2">
+        <div
+          ref={ref}
+          className="card4 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
+        >
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-3xl text-darkviolet">
               Social media promotion

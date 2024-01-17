@@ -61,7 +61,7 @@ const Whyus = () => {
 
   return (
     <section className="">
-      <div className="relative container px-6 py-10 mx-auto flex justify-center items-center flex-col">
+      <div className="relative container px-6 py-10 mx-auto flex justify-start md:justify-center md:items-center flex-col">
         <div
           className="absolute inset-0 blur-[125px] max-w-lg h-[700px] mx-auto sm:max-w-5xl sm:h-[700px]"
           style={{
@@ -69,17 +69,20 @@ const Whyus = () => {
               "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
           }}
         ></div>
-        <h1 className="tit text-2xl font-semibold text-center text-white capitalize lg:text-6xl ">
+        <h1 className="tit text-4xl font-semibold text-start md:text-center text-white capitalize lg:text-6xl ">
           Why choosing us?
         </h1>
 
-        <div className="mt-2 text-center">
+        <div className="mt-2 md:text-center">
           <span className="inline-block w-60 h-1 bg-lightviolet rounded-full"></span>
           <span className="inline-block w-10 h-1 ml-1 bg-lightviolet rounded-full"></span>
           <span className="inline-block w-4 h-1 ml-1 bg-lightviolet rounded-full"></span>
         </div>
 
-        <div ref={ref} className="mt-8 lg:pl-8 max-w-7xl xl:mt-12 lg:flex  lg:items-center">
+        <div
+          ref={ref}
+          className="mt-8 lg:pl-8 max-w-7xl xl:mt-12 lg:flex  lg:items-center"
+        >
           <div className="relative grid  w-full grid-cols-1 gap-8 lg:max-w-2xl xl:gap-7 md:grid-cols-2">
             <div
               ref={ref}
@@ -103,13 +106,12 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                New Components
+                Innovation Catalyst
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                Devency leads in tech trends, offering innovative solutions that
+                elevate your projects beyond the ordinary.
               </p>
             </div>
 
@@ -141,13 +143,13 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                elegant Dark Mode
+                Expertise Unleashed
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                Unlock digital mastery with Devency. Our seasoned professionals
+                bring unmatched industry expertise to craft innovative solutions
+                tailored to your unique needs.
               </p>
             </div>
 
@@ -173,12 +175,12 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Easy to customiztions
+                Collaborative Brilliance
               </h1>
               <p className="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                Choose Devency for vision synergy. Our collaborative approach
+                ensures your goals become ours, fostering transparent
+                communication and surpassing expectations.
               </p>
             </div>
 
@@ -204,13 +206,12 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Simple & clean designs
+                Quality Assurance Excellence
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+                Devency is committed to code precision, ensuring robust and
+                reliable digital products that exceed expectations.
               </p>
             </div>
           </div>

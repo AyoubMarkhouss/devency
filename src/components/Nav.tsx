@@ -24,7 +24,7 @@ import {
   TagUser,
   Scale,
 } from "./icons/Icons";
-import Cheverondown from "./icons/Cheverondown";
+
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -153,16 +153,16 @@ export default function App() {
             </Link>
           </NavbarItem>
 
-          <Dropdown className="bg-[#161A30]">
+          {/* <Dropdown className="bg-[#161A30]">
             <NavbarItem>
               <DropdownTrigger>
-                {/* <Button
+                <Button
                   disableRipple
                   className="text-xl  tracking-wide bg-transparent data-[hover=true]:bg-transparent top-0"
                   endContent={icons.chevron}
                 >
                   Our services
-                </Button> */}
+                </Button>
                 <Link className="text-xl cursor-pointer tracking-wide bg-transparent data-[hover=true]:bg-transparent top-0">
                   Our services{" "}
                   <Cheverondown className="w-6 pl-1 fill-white flex items-center justify-center" />
@@ -206,11 +206,12 @@ export default function App() {
                 +Supreme Support
               </DropdownItem>
             </DropdownMenu>
-          </Dropdown>
+          </Dropdown> */}
           <NavbarItem>
-            <Link className=" text-xl tracking-wide " href="#">
-              Integrations
+            <Link  className=" text-xl tracking-wide " href="/">
+              Our Services
             </Link>
+            <Link />
           </NavbarItem>
           <NavbarItem>
             <Link className=" text-xl tracking-wide " href="/faqpage">
