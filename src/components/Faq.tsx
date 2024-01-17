@@ -70,7 +70,7 @@ export const Faq = () => {
           </div>
 
           <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#9F73AB] sm:text-4xl md:mx-auto">
+            <h2 className=" mb-6 text-3xl font-bold leading-none tracking-normal text-white sm:text-5xl md:mx-auto">
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
@@ -105,7 +105,7 @@ export const Faq = () => {
             </p>
           </div>
         </div>
-        <div className="space-y-4 z-50">
+        <div className="space-y-4 z-50 ">
           <Item title="What services does Devency offer?">
             Devency specializes in a wide range of IT development services,
             including web development, mobile app development, software

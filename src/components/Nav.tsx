@@ -24,7 +24,11 @@ import {
   TagUser,
   Scale,
 } from "./icons/Icons";
-
+import {
+  Link as ScrollLink,
+  animateScroll as scroll,
+  scroller,
+} from "react-scroll";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -146,7 +150,7 @@ export default function App() {
             <Logo className="w-36 -mt-1 drop-shadow-lg" />
           </Link>
         </NavbarBrand>
-        <div className="flex gap-4 ml-8 text-xl">
+        <div className="flex gap-4 sm:pl-10 text-xl">
           <NavbarItem>
             <Link className=" text-xl tracking-wide " href="/">
               Home
@@ -208,13 +212,19 @@ export default function App() {
             </DropdownMenu>
           </Dropdown> */}
           <NavbarItem>
-            <Link  className=" text-xl tracking-wide " href="/">
+            <ScrollLink
+              to="services"
+              className="cursor-pointer pl-3 text-xl tracking-wide"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              offset={-80}
+            >
               Our Services
-            </Link>
-            <Link />
+            </ScrollLink>
           </NavbarItem>
           <NavbarItem>
-            <Link className=" text-xl tracking-wide " href="/faqpage">
+            <Link className=" text-xl tracking-wide pl-3" href="/faqpage">
               FAQ
             </Link>
           </NavbarItem>
