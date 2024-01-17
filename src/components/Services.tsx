@@ -63,7 +63,7 @@ const Services = () => {
       ></div>
       
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="tit max-w-lg mb-2 text-3xl font-semibold tracking-wide text-white sm:text-6xl md:mx-auto">
+        <h2 className="tit max-w-lg mb-2 text-4xl font-semibold tracking-wide text-white sm:text-6xl md:mx-auto">
           {/* <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
