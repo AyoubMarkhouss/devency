@@ -45,14 +45,14 @@ const Testimonials = () => {
                   <div className="w-full">
                     <p className="text-sm leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
+                        &quot;
                       </span>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quos sunt ratione dolor exercitationem minima quas itaque
                       saepe quasi architecto vel! Accusantium, vero sint
                       recusandae cum tempora nemo commodi soluta deleniti.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
+                        &quot;
                       </span>
                     </p>
                   </div>
@@ -76,13 +76,13 @@ const Testimonials = () => {
                   <div className="w-full">
                     <p className="text-sm leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
+                        &quot;
                       </span>
                       Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
                       Dolore quod necessitatibus, labore sapiente, est,
                       dignissimos ullam error ipsam sint quam tempora vel.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
+                        &quot;
                       </span>
                     </p>
                   </div>
@@ -108,13 +108,13 @@ const Testimonials = () => {
                   <div className="w-full">
                     <p className="text-sm leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
+                        &quot;
                       </span>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Vitae, obcaecati ullam excepturi dicta error deleniti
                       sequi.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
+                        &quot;
                       </span>
                     </p>
                   </div>
@@ -138,7 +138,7 @@ const Testimonials = () => {
                   <div className="w-full">
                     <p className="text-sm leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
+                        &quot;
                       </span>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Architecto inventore voluptatum nostrum atque, corrupti,
@@ -146,7 +146,7 @@ const Testimonials = () => {
                       natus, hic sequi itaque dicta nisi voluptatem! Culpa,
                       iusto.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
+                        &quot;
                       </span>
                     </p>
                   </div>
@@ -172,7 +172,7 @@ const Testimonials = () => {
                   <div className="w-full">
                     <p className="text-sm leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
+                        &quot;
                       </span>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Nobis, voluptatem porro obcaecati dicta, quibusdam sunt
@@ -180,7 +180,7 @@ const Testimonials = () => {
                       deserunt tempora molestiae assumenda nesciunt alias eius?
                       Illo, autem!
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
+                        &quot;
                       </span>
                     </p>
                   </div>
@@ -204,12 +204,12 @@ const Testimonials = () => {
                   <div className="w-full">
                     <p className="text-sm leading-tight">
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
+                        &quot;
                       </span>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Voluptatem iusto, explicabo, cupiditate quas totam!
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
+                        &quot;
                       </span>
                     </p>
                   </div>
