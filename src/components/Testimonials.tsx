@@ -48,7 +48,7 @@ const Testimonials = () => {
     }
   }, [inView]);
   return (
-    <div className="relative">
+    <div className="relative py-6 md:py-0">
       <div className="min-w-screen py-10 flex items-center justify-center ">
         <div
           className="absolute inset-0 blur-[135px] max-w-lg h-[700px] mx-auto sm:max-w-5xl sm:h-[700px]"
@@ -91,15 +91,16 @@ const Testimonials = () => {
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <Image
-                        width={100}
-                        height={100}
-                        src="/batman.png"
+                        width={200}
+                        height={200}
+                        src="/ayoub.jpeg"
                         alt=""
+                        className="-mt-3"
                       />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Kenzie Edgar.
+                        Ayoub Markhouss.
                       </h6>
                     </div>
                   </div>
@@ -122,15 +123,16 @@ const Testimonials = () => {
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <Image
-                        width={100}
-                        height={100}
-                        src="/batman.png"
+                        width={200}
+                        height={200}
+                        src="/taha.jpg"
                         alt=""
+                        className="-mt-3"
                       />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Stevie Tifft.
+                        Taha Benazi.
                       </h6>
                     </div>
                   </div>
@@ -158,13 +160,14 @@ const Testimonials = () => {
                       <Image
                         width={100}
                         height={100}
-                        src="/batman.png"
+                        src="/ibrahim.jpg"
                         alt=""
+                        className="-mt-[22px]"
                       />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Tommie Ewart.
+                        Ibrahim Benzekri arabi.
                       </h6>
                     </div>
                   </div>
@@ -189,13 +192,14 @@ const Testimonials = () => {
                       <Image
                         width={100}
                         height={100}
-                        src="/batman.png"
+                        src="/saber.jpg"
                         alt=""
+                        className="-mt-4"
                       />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Charlie Howse.
+                        Saber Ezzyati.
                       </h6>
                     </div>
                   </div>
