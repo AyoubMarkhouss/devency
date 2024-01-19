@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from "react";
@@ -8,12 +7,13 @@ const Services = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const mm = gsap.matchMedia();
   ////////////////title
   const title = () => {
     gsap.fromTo(
       ".tit",
       { opacity: 0, y: -100 },
-      { opacity: 1, duration: 1, y: 0 }
+      { opacity: 1, duration: 1, y: 0, ease: "power2.out" }
     );
   };
   useEffect(() => {
@@ -49,6 +49,7 @@ const Services = () => {
       card();
     }
   }, [inView]);
+
   return (
     <div
       className="relative px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
@@ -61,7 +62,7 @@ const Services = () => {
             "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
         }}
       ></div>
-      
+
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2 className="tit max-w-lg mb-2 text-4xl font-semibold tracking-wide text-white sm:text-6xl md:mx-auto">
           {/* <span className="relative inline-block">
@@ -101,7 +102,7 @@ const Services = () => {
           our references!
         </p>
       </div>
-      
+
       <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
         <div
           ref={ref}
@@ -112,7 +113,13 @@ const Services = () => {
               App & Web Developement
             </h3>
             <div className="flex justify-center items-center">
-              <Image alt="" src="/html.gif" width={100} height={100} />
+              <Image
+                alt=""
+                src="/html.gif"
+                width={100}
+                height={100}
+                sizes="(max-width: 640px) 100vw, 200px"
+              />
             </div>
             <p className="text-sm text-gray-900 text-justify">
               Transform ideas into digital brilliance with Devency. We
@@ -131,7 +138,13 @@ const Services = () => {
               Branding & Identity
             </h6>
             <div className="flex justify-center items-center">
-              <Image alt="" src="/monitor.gif" width={100} height={100} />
+              <Image
+                alt=""
+                src="/monitor.gif"
+                width={100}
+                height={100}
+                sizes="(max-width: 640px) 100vw, 200px"
+              />
             </div>
             <p className="text-sm text-gray-900 text-justify">
               Elevate your brand with Devency&apos;s comprehensive services. We
@@ -149,7 +162,13 @@ const Services = () => {
               Traffic Acquisition
             </h6>
             <div className="flex justify-center items-center">
-              <Image alt="" src="/rocket.gif" width={100} height={100} />
+              <Image
+                alt=""
+                src="/rocket.gif"
+                width={100}
+                height={100}
+                sizes="(max-width: 640px) 100vw, 200px"
+              />
             </div>
             <p className="text-sm text-gray-900 text-justify">
               Drive targeted traffic with Devency&apos;s expertise. We optimize
@@ -167,7 +186,13 @@ const Services = () => {
               Social media promotion
             </h6>
             <div className="flex justify-center items-center">
-              <Image alt="" src="/promotion.gif" width={100} height={100} />
+              <Image
+                alt=""
+                src="/promotion.gif"
+                width={100}
+                height={100}
+                sizes="(max-width: 640px) 100vw, 200px"
+              />
             </div>
             <p className="text-sm text-gray-900 text-justify">
               Maximize your online presence with Devency&apos;s social media
