@@ -71,10 +71,8 @@ const Home = () => {
           ref={ref}
           className="tit  md:max-w-7xl text-5xl px-3 md:text-[82px] justify-center flex text-center "
         >
-          l'avenir est de le créer !
+          l&apos;avenir est de le créer !
         </h1>
-
-        
       </div>
       <div className="relative md:-mt-10 flex flex-col md:flex-row items-center mx-6">
         <div className="flex flex-col gap-4 pt-3 md:gap-9 md:pt-7 ">
@@ -82,10 +80,10 @@ const Home = () => {
             {/* Crafting Digital Excellence. Where innovation meets precision, we
             turn ideas into seamless digital experiences. Welcome to a world of
             code, creativity, and unmatched expertise. */}
-            Création d'Excellence Numérique. Là où l'innovation rencontre la
-            précision, nous transformons les idées en expériences numériques
-            fluides. Bienvenue dans un monde de code, de créativité et
-            d'expertise inégalée.
+            Création d&apos;Excellence Numérique. Là où l&apos;innovation
+            rencontre la précision, nous transformons les idées en expériences
+            numériques fluides. Bienvenue dans un monde de code, de créativité
+            et d&apos;expertise inégalée.
           </p>
           {/* <Button
             as={Link}
@@ -110,7 +108,7 @@ const Home = () => {
             duration={1500}
             offset={-90}
           >
-           Commencer
+            Commencer
           </Link>
         </div>
 

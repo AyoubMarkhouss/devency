@@ -106,13 +106,13 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Catalyseur d'Innovation
+                Catalyseur d&apos;Innovation
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
                 Devency se positionne en leader des tendances technologiques,
                 proposant des solutions innovantes qui élèvent vos projets
-                au-delà de l'ordinaire.
+                au-delà de l&apos;ordinaire.
               </p>
             </div>
 
@@ -213,8 +213,8 @@ const Whyus = () => {
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Devency s'engage envers la précision du code, garantissant des
-                produits numériques robustes et fiables qui dépassent les
+                Devency s&apos;engage envers la précision du code, garantissant
+                des produits numériques robustes et fiables qui dépassent les
                 attentes.
               </p>
             </div>

@@ -176,8 +176,8 @@ const Services = () => {
             <p className="text-sm text-gray-900 text-justify">
               Attirez du trafic ciblé avec l&apos;expertise de Devency. Nous
               optimisons votre présence en ligne grâce au référencement naturel
-              (SEO), à la publicité en ligne (SEA) et à d'autres stratégies pour
-              engager le bon public.
+              (SEO), à la publicité en ligne (SEA) et à d&apos;autres stratégies
+              pour engager le bon public.
             </p>
           </div>
         </div>

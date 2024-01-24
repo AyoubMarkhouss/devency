@@ -96,14 +96,13 @@ export default function Home() {
                 seamlessly blends creativity with precision, where ideas
                 flourish into transformative digital solutions. */}
                 Chez Devency, notre parcours a commencé avec une passion commune
-                pour l'innovation et un engagement à redéfinir le paysage
-                numérique. Fondée en 2022, notre entreprise s'est fixé pour
+                pour l&apos;innovation et un engagement à redéfinir le paysage
+                numérique. Fondée en 2022, notre entreprise s&apos;est fixé pour
                 objectif de créer une agence de développement qui associe
                 harmonieusement créativité et précision, où les idées
-                s'épanouissent pour devenir des solutions numériques
+                s&apos;épanouissent pour devenir des solutions numériques
                 transformantes.
               </p>
-              
             </div>
           </main>
         </div>
