@@ -9,22 +9,33 @@ import Devider from "@/components/Devider";
 import Testimonials from "@/components/Testimonials";
 
 import Scrolltop from "@/components/Scrolltop";
-
+import Bgicons from "@/components/Bgicons";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh_-_90px)] bg-[#161A30]">
-      <Homepage />
-      <Scrolltop/>
-      <About />
-      <Devider />
-      <Whyus />
-      <Devider />
-      <Services />
-      <Devider />
-      <Testimonials/>
-    </main>
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Découvrez des possibilités illimitées avec l&apos;agence de marketing Devency, votre partenaire de confiance pour des solutions informatiques innovantes. De la développement d'applications et de sites web à la stratégie de marque et d&apos;identité, nous fusionnons créativité et précision. Choisissez Devency pour une collaboration brillante, une excellence en assurance qualité, et un engagement à façonner la technologie de demain dès aujourd&apos;hui. Élevez votre expérience numérique avec une équipe dévouée à votre succès."
+        />
+        <link rel="icon" href="/devency.ico" />
+        <title>Devency - Home</title>
+      </Head>
+      <main className="min-h-[calc(100vh_-_90px)] bg-[#161A30]">
+        <Homepage />
+        <Scrolltop />
+        <About />
+        <Bgicons />
+        <Whyus />
+        <Bgicons />
+        <Services />
+        <Bgicons />
+        <Testimonials />
+      </main>
+    </>
   );
 }
