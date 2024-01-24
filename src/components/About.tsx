@@ -9,16 +9,19 @@ export default function Home() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-////////////// the devency prepective
+  const isLaptop = () => {
+    return window.innerWidth > 1024; // Set your threshold for laptop devices
+  };
+  ////////////// the devency prepective
   const title = () => {
     gsap.fromTo(
       ".about",
       { opacity: 0, x: 200 },
-      { opacity: 1, duration: 1, x: 0, rotationX: 360}
+      { opacity: 1, duration: 1, x: 0, rotationX: 360 }
     );
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && isLaptop()) {
       title();
     }
   }, [inView]);
@@ -27,7 +30,7 @@ export default function Home() {
     gsap.fromTo(
       ".vio1",
       { opacity: 0, x: 300 },
-      { opacity: 1, duration: 1, x: 0 , }
+      { opacity: 1, duration: 1, x: 0 }
     );
     gsap.fromTo(
       ".vio2",
@@ -41,7 +44,7 @@ export default function Home() {
     );
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && isLaptop()) {
       violet();
     }
   }, [inView]);
@@ -54,7 +57,7 @@ export default function Home() {
     );
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && isLaptop()) {
       parag();
     }
   }, [inView]);

@@ -1,51 +1,56 @@
-
 import Illustration from "./Illustration";
 import {
   Link,
   Link as ScrollLink,
   animateScroll as scroll,
-  scroller, 
+  scroller,
 } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
 const Home = () => {
-   const [ref, inView] = useInView({
-     triggerOnce: true,
-   });
-   ////////////////////paragraphe
-    const title = () => {
-      gsap.fromTo(
-        ".par",
-        { opacity: 0, x: -40 },
-        { opacity: 1, duration: 1, x: 0 }
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const isLaptop = () => {
+    return window.innerWidth > 1024; // Set your threshold for laptop devices
+  };
+  ////////////////////paragraphe
+  const title = () => {
+    gsap.fromTo(
+      ".par",
+      { opacity: 0, x: -40 },
+      { opacity: 1, duration: 1, x: 0 }
+    );
+  };
+  useEffect(() => {
+    if (inView && isLaptop()) {
+      title();
+    }
+  }, [inView]);
+  ///////////////title
+  useEffect(() => {
+    if (inView && isLaptop()) {
+      const tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+      tl.fromTo(
+        ".tit",
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, stagger: 0.2 }
       );
-    };
-    useEffect(() => {
-      if (inView) {
-        title();
-      }
-    }, [inView]);
-///////////////title
-    useEffect(() => {
-      if (inView) {
-        const tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
-        tl.fromTo(".tit", { y: 100 , opacity:0}, { y: 0,opacity:1, duration: 1, stagger: 0.2 });
-      }
-    }, [inView]);
-    //////////////////illustration
-     useEffect(() => {
-       if (inView) {
-         const tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
-         tl.fromTo(
-           ".ill",
-           { y: -40, opacity: 0 },
-           { y: 0, opacity: 1, duration: 1, stagger: 0.2 }
-         );
-       }
-     }, [inView]);
-
+    }
+  }, [inView]);
+  //////////////////illustration
+  useEffect(() => {
+    if (inView && isLaptop()) {
+      const tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+      tl.fromTo(
+        ".ill",
+        { y: -40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, stagger: 0.2 }
+      );
+    }
+  }, [inView]);
 
   return (
     <main

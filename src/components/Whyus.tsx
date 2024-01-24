@@ -1,63 +1,68 @@
-
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 const Whyus = () => {
-     const [ref, inView] = useInView({
-       triggerOnce: true,
-     });
-     ////////////////title
-      const title = () => {
-        gsap.fromTo(
-          ".tit",
-          { opacity: 0, y: -100 },
-          { opacity: 1, duration: 1, y: 0 }
-        );
-      };
-      useEffect(() => {
-        if (inView) {
-          title();
-        }
-      }, [inView]);
-     //////////////////////cards
-       const card = () => {
-         gsap.fromTo(
-           ".card1",
-           { opacity: 0, y: 50 , delay:0},
-           { opacity: 1, duration: 0.5, y: 0,delay:0.3 }
-         ); gsap.fromTo(
-           ".card2",
-           { opacity: 0, y: 50, delay: 0 },
-           { opacity: 1, duration: 0.5, y: 0, delay: 0.6 }
-         ); gsap.fromTo(
-           ".card3",
-           { opacity: 0, y: 50, delay: 0 },
-           { opacity: 1, duration: 0.5, y: 0, delay: 0.9 }
-         ); gsap.fromTo(
-           ".card4",
-           { opacity: 0, y: 50, delay: 0 },
-           { opacity: 1, duration: 0.5, y: 0, delay: 1}
-         );
-       };
-       useEffect(() => {
-         if (inView) {
-           card();
-         }
-       }, [inView]);
-       ///////////////image
-         const image = () => {
-           gsap.fromTo(
-             ".im",
-             { opacity: 0, x:200},
-             { opacity: 1, duration: 1.2,  x:0}
-           );
-         };
-         useEffect(() => {
-           if (inView) {
-             image();
-           }
-         }, [inView]);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const isLaptop = () => {
+    return window.innerWidth > 1024; // Set your threshold for laptop devices
+  };
+  ////////////////title
+  const title = () => {
+    gsap.fromTo(
+      ".tit",
+      { opacity: 0, y: -100 },
+      { opacity: 1, duration: 1, y: 0 }
+    );
+  };
+  useEffect(() => {
+    if (inView && isLaptop()) {
+      title();
+    }
+  }, [inView]);
+  //////////////////////cards
+  const card = () => {
+    gsap.fromTo(
+      ".card1",
+      { opacity: 0, y: 50, delay: 0 },
+      { opacity: 1, duration: 0.5, y: 0, delay: 0.3 }
+    );
+    gsap.fromTo(
+      ".card2",
+      { opacity: 0, y: 50, delay: 0 },
+      { opacity: 1, duration: 0.5, y: 0, delay: 0.6 }
+    );
+    gsap.fromTo(
+      ".card3",
+      { opacity: 0, y: 50, delay: 0 },
+      { opacity: 1, duration: 0.5, y: 0, delay: 0.9 }
+    );
+    gsap.fromTo(
+      ".card4",
+      { opacity: 0, y: 50, delay: 0 },
+      { opacity: 1, duration: 0.5, y: 0, delay: 1 }
+    );
+  };
+  useEffect(() => {
+    if (inView && isLaptop()) {
+      card();
+    }
+  }, [inView]);
+  ///////////////image
+  const image = () => {
+    gsap.fromTo(
+      ".im",
+      { opacity: 0, x: 200 },
+      { opacity: 1, duration: 1.2, x: 0 }
+    );
+  };
+  useEffect(() => {
+    if (inView && isLaptop()) {
+      image();
+    }
+  }, [inView]);
 
   return (
     <section className="">
