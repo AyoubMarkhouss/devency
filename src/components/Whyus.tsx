@@ -70,7 +70,7 @@ const Whyus = () => {
           }}
         ></div>
         <h1 className="tit text-4xl font-semibold text-start md:text-center text-white capitalize lg:text-6xl ">
-          Why choosing us?
+          Pourquoi nous choisir ?
         </h1>
 
         <div className="mt-2 md:text-center">
@@ -106,12 +106,13 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Innovation Catalyst
+                Catalyseur d'Innovation
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Devency leads in tech trends, offering innovative solutions that
-                elevate your projects beyond the ordinary.
+                Devency se positionne en leader des tendances technologiques,
+                proposant des solutions innovantes qui élèvent vos projets
+                au-delà de l'ordinaire.
               </p>
             </div>
 
@@ -143,13 +144,14 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Expertise Unleashed
+                Expertise Libérée
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Unlock digital mastery with Devency. Our seasoned professionals
-                bring unmatched industry expertise to craft innovative solutions
-                tailored to your unique needs.
+                Débloquez la maîtrise numérique avec Devency. Nos professionnels
+                chevronnés apportent une expertise industrielle inégalée pour
+                élaborer des solutions innovantes adaptées à vos besoins
+                uniques.
               </p>
             </div>
 
@@ -175,12 +177,13 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Collaborative Brilliance
+                Brillance Collaborative
               </h1>
               <p className="text-gray-500 dark:text-gray-300">
-                Choose Devency for vision synergy. Our collaborative approach
-                ensures your goals become ours, fostering transparent
-                communication and surpassing expectations.
+                Choisissez Devency pour une synergie de vision. Notre approche
+                collaborative garantit que vos objectifs deviennent les nôtres,
+                favorisant une communication transparente et dépassant les
+                attentes.
               </p>
             </div>
 
@@ -206,23 +209,24 @@ const Whyus = () => {
               </span>
 
               <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Quality Assurance Excellence
+                Excellence en Assurance Qualité
               </h1>
 
               <p className="text-gray-500 dark:text-gray-300">
-                Devency is committed to code precision, ensuring robust and
-                reliable digital products that exceed expectations.
+                Devency s'engage envers la précision du code, garantissant des
+                produits numériques robustes et fiables qui dépassent les
+                attentes.
               </p>
             </div>
           </div>
 
-          <div className="hidden lg:flex w-full " ref={ref}>
+          <div className="hidden lg:flex w-full overflow-hidden" ref={ref}>
             <Image
               width={1500}
               height={1500}
               src="/people.png"
               alt=""
-              className="im w-full h-[33rem] flex-shrink-0 object-cover z-50 lg:pl-20"
+              className="im w-full h-[33rem] flex-shrink-0 object-cover z-40 lg:pl-20"
             />
           </div>
         </div>

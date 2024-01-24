@@ -65,8 +65,8 @@ const Testimonials = () => {
                 className="tit2 text-start md:w-1/3 mx-auto flex flex-col justify-center md:h-full mr-10"
               >
                 <div className="z-50 absolute">
-                  <h1 className=" text-3xl md:text-7xl font-bold mb-2 text-white">
-                    What our clients say
+                  <h1 className=" text-3xl md:text-6xl font-bold mb-2 text-white">
+                    Ce que disent nos clients
                   </h1>
 
                   <div className="mb-10 text-start ">
@@ -109,10 +109,10 @@ const Testimonials = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         &quot;
                       </span>
-                      Devency exceeded our expectations! Their attention to
-                      detail, innovative solutions, and collaborative approach
-                      made our project a true success. We&apos;re thrilled with
-                      the results!
+                      Devency a dépassé nos attentes ! Leur souci du détail,
+                      leurs solutions innovantes et leur approche collaborative
+                      ont fait de notre projet un véritable succès. Nous sommes
+                      ravis des résultats !
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         &quot;
                       </span>
@@ -141,10 +141,11 @@ const Testimonials = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         &quot;
                       </span>
-                      Working with Devency was a game-changer for our business.
-                      Their expertise, professionalism, and commitment to our
-                      vision were unparalleled. A top-notch team delivering
-                      top-notch results!
+                      Travailler avec Devency a été un tournant décisif pour
+                      notre entreprise. Leur expertise, leur professionnalisme
+                      et leur engagement envers notre vision étaient inégalés.
+                      Une équipe de premier ordre qui offre des résultats de
+                      premier ordre !
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         &quot;
                       </span>
@@ -176,10 +177,11 @@ const Testimonials = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         &quot;
                       </span>
-                      Devency&apos;s quality of work and dedication to client
-                      satisfaction set them apart. The team&apos;s
-                      responsiveness and ability to adapt to our evolving needs
-                      made the entire process seamless and enjoyable
+                      La qualité du travail de Devency et son dévouement à la
+                      satisfaction du client les distinguent. La réactivité de
+                      l&apos;équipe et sa capacité à s&apos;adapter à nos
+                      besoins en constante évolution ont rendu l&apos;ensemble
+                      du processus fluide et agréable.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         &quot;
                       </span>
@@ -208,10 +210,11 @@ const Testimonials = () => {
                       <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         &quot;
                       </span>
-                      Devency doesn&apos;t just develop, they create
-                      experiences. The level of creativity and precision in
-                      their work is unmatched. We&apos;re incredibly satisfied
-                      with the impact they&apos;ve had on our brand.
+                      Devency ne se contente pas de développer, ils créent des
+                      expériences. Le niveau de créativité et de précision dans
+                      leur travail est incomparable. Nous sommes extrêmement
+                      satisfaits de l&apos;impact qu&apos;ils ont eu sur notre
+                      marque.
                       <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         &quot;
                       </span>

@@ -8,6 +8,8 @@ import Whyus from "@/components/Whyus";
 import Devider from "@/components/Devider";
 import Testimonials from "@/components/Testimonials";
 
+import Scrolltop from "@/components/Scrolltop";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,7 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh_-_90px)] bg-[#161A30]">
       <Homepage />
+      <Scrolltop/>
       <About />
       <Devider />
       <Whyus />

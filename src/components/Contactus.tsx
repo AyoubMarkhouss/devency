@@ -19,10 +19,10 @@ const Contactus: React.FC = () => {
 
       .then(
         () => {
-          toast.success("message sent!");
+          toast.success("message envoyé!");
         },
         () => {
-          toast.error("something wrong");
+          toast.error("Quelque chose ne va pas :(");
         }
       );
     e.target.reset();
@@ -118,10 +118,10 @@ const Contactus: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-6 w-80 md:mt-8">
-              <h3 className="text-gray-400 text-lg">Follow us</h3>
-              <div className="flex mt-4 -ml-3">
-                <Link
+            <div className="mt-6 w-80 md:mt-8 flex items-center">
+              <h3 className="text-lightviolet text-lg">Follow us</h3>
+              <div className="flex ">
+                {/* <Link
                   className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-lightviolet"
                   href="https://www.facebook.com/"
                 >
@@ -136,14 +136,14 @@ const Contactus: React.FC = () => {
                       fill="currentColor"
                     />
                   </svg>
-                </Link>
+                </Link> */}
 
                 <Link
                   className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-lightviolet"
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/devency_/"
                 >
                   <svg
-                    className="w-8 h-8"
+                    className="w-10 h-10"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@ const Contactus: React.FC = () => {
                 <form className="text-darkbg" ref={form} onSubmit={sendmail}>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="">
-                      <label>Fullname</label>
+                      <label>Nom complet</label>
                       <input
                         className="mt-1 block w-full rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-lightviolet"
                         name="full_name"
@@ -174,7 +174,7 @@ const Contactus: React.FC = () => {
                     </div>
 
                     <div className="mb-3">
-                      <label>Phone</label>
+                      <label>Téléphone</label>
                       <input
                         className="mt-1 block w-full rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-lightviolet"
                         name="phone"
@@ -196,7 +196,7 @@ const Contactus: React.FC = () => {
                   </div>
 
                   <div className="mb-3">
-                    <label>Message</label>
+                    <label>Méssage</label>
                     <textarea
                       className="mt-1 block w-full rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-lightviolet"
                       id="message"
@@ -211,7 +211,7 @@ const Contactus: React.FC = () => {
                       className="w-full inline-flex justify-center rounded-md border border-transparent bg-darkviolet px-5 py-2.5 text-sm font-medium text-white hover:bg-lightviolet focus:outline-none focus-visible:ring-2 focus-visible:ring-darkviolet focus-visible:ring-offset-2"
                       type="submit"
                     >
-                      Send
+                      Envoyer
                     </button>
                   </div>
                 </form>

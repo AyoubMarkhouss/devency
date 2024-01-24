@@ -153,7 +153,7 @@ export default function App() {
         <div className="flex gap-4 sm:pl-10 text-xl">
           <NavbarItem>
             <Link className=" text-xl tracking-wide " href="/">
-              Home
+             Acceuil
             </Link>
           </NavbarItem>
 
@@ -220,7 +220,7 @@ export default function App() {
               duration={1500}
               offset={-80}
             >
-              Our Services
+              Nos Services
             </ScrollLink>
           </NavbarItem>
           <NavbarItem>
@@ -239,7 +239,7 @@ export default function App() {
             href="/contactpage"
             variant="flat"
           >
-            Contact-Us
+            Contactez-nous
           </Button>
         </NavbarItem>
       </NavbarContent>

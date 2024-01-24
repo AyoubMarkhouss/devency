@@ -61,7 +61,6 @@ export default function Home() {
 
   return (
     <div className="relative overflow-hidden my-20 px-4 md:px-0" id="about">
-      
       <div className="max-w-6xl mx-auto ">
         <div className=" rounded-t-3xl md:rounded-bl-3xl md:rounded-tr-none relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-0 lg:flex lg:items-center lg:h-[75vh]">
           <svg
@@ -79,7 +78,7 @@ export default function Home() {
                 ref={ref}
                 className="about tracking-wider pt-6 md:pt-0 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl "
               >
-                The Devency Perspective
+                La Perspective Devency
               </h1>
 
               <div className="violet mt-2">
@@ -91,22 +90,20 @@ export default function Home() {
                 ref={ref}
                 className="par2 mt-3 md:leading-9 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-5 md:text-2xl lg:mx-0"
               >
-                At Devency, our journey began with a shared passion for
+                {/* At Devency, our journey began with a shared passion for
                 innovation and a commitment to redefining the digital landscape.
                 Founded in 2022, we set out to create a development agency that
                 seamlessly blends creativity with precision, where ideas
-                flourish into transformative digital solutions.
+                flourish into transformative digital solutions. */}
+                Chez Devency, notre parcours a commencé avec une passion commune
+                pour l'innovation et un engagement à redéfinir le paysage
+                numérique. Fondée en 2022, notre entreprise s'est fixé pour
+                objectif de créer une agence de développement qui associe
+                harmonieusement créativité et précision, où les idées
+                s'épanouissent pour devenir des solutions numériques
+                transformantes.
               </p>
-              {/* <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <Link
-                    href="/contactpage"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-lightviolet md:py-4 md:text-lg md:px-10"
-                  >
-                    Get started
-                  </Link>
-                </div>
-              </div> */}
+              
             </div>
           </main>
         </div>

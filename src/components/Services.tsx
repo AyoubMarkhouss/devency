@@ -7,6 +7,9 @@ const Services = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+   const isLaptop = () => {
+     return window.innerWidth > 1024; // Set your threshold for laptop devices
+   };
   const mm = gsap.matchMedia();
   ////////////////title
   const title = () => {
@@ -45,7 +48,7 @@ const Services = () => {
     );
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && isLaptop()) {
       card();
     }
   }, [inView]);
@@ -89,7 +92,7 @@ const Services = () => {
             </svg>
             <span className="relative">Our</span>
           </span>{" "} */}
-          Our Services
+          Nos Services
         </h2>
         <div className="mb-3 text-start md:text-center">
           <span className="inline-block w-60 h-1 bg-lightviolet rounded-full"></span>
@@ -97,9 +100,9 @@ const Services = () => {
           <span className="inline-block w-4 h-1 ml-1 bg-lightviolet rounded-full"></span>
         </div>
         <p className="text-base text-gray-400 md:text-lg">
-          Together with you, we define objective criteria that allow us to
-          rationally judge the effectiveness of our creations. Here are some of
-          our references!
+          En collaboration avec vous, nous définissons des critères objectifs
+          qui nous permettent de juger rationnellement de l&apos;efficacité de
+          nos créations. Voici quelques-unes de nos références !
         </p>
       </div>
 
@@ -108,9 +111,9 @@ const Services = () => {
           ref={ref}
           className="card1 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
         >
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+          <div className="h-full p-5  shadow-sm">
             <h3 className="mb-2 font-semibold leading-7 text-darkviolet text-3xl">
-              App & Web Developement
+              Création site web & app mobile
             </h3>
             <div className="flex justify-center items-center">
               <Image
@@ -122,10 +125,10 @@ const Services = () => {
               />
             </div>
             <p className="text-sm text-gray-900 text-justify">
-              Transform ideas into digital brilliance with Devency. We
-              specialize in creating sleek websites, powerful e-commerce
-              platforms, and innovative mobile apps, crafting solutions that
-              redefine your online presence.
+              Transformez vos idées en brillance digitale avec Devency.
+              Spécialisés dans les sites web élégants, l&apos;e-commerce et les
+              applications innovantes, nous redéfinissons votre présence en
+              ligne.
             </p>
           </div>
         </div>
@@ -133,9 +136,9 @@ const Services = () => {
           ref={ref}
           className="card2 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
         >
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+          <div className="h-full p-5  shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-3xl text-darkviolet">
-              Branding & Identity
+              Branding & Identité
             </h6>
             <div className="flex justify-center items-center">
               <Image
@@ -147,9 +150,9 @@ const Services = () => {
               />
             </div>
             <p className="text-sm text-gray-900 text-justify">
-              Elevate your brand with Devency&apos;s comprehensive services. We
-              go beyond logos, crafting a narrative that makes your brand
-              unforgettable.
+              Rehaussez votre marque avec les services complets de Devency. Nous
+              allons au-delà des logos, créant une narration qui rend votre
+              marque inoubliable.
             </p>
           </div>
         </div>
@@ -157,9 +160,9 @@ const Services = () => {
           ref={ref}
           className="card3 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
         >
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+          <div className="h-full p-5  shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-darkviolet text-3xl">
-              Traffic Acquisition
+              Acquisition de trafic
             </h6>
             <div className="flex justify-center items-center">
               <Image
@@ -171,9 +174,10 @@ const Services = () => {
               />
             </div>
             <p className="text-sm text-gray-900 text-justify">
-              Drive targeted traffic with Devency&apos;s expertise. We optimize
-              your online presence through SEO, SEA, and other strategies to
-              engage the right audience.
+              Attirez du trafic ciblé avec l&apos;expertise de Devency. Nous
+              optimisons votre présence en ligne grâce au référencement naturel
+              (SEO), à la publicité en ligne (SEA) et à d'autres stratégies pour
+              engager le bon public.
             </p>
           </div>
         </div>
@@ -181,9 +185,9 @@ const Services = () => {
           ref={ref}
           className="card4 shadow-2xl  duration-300 transform bg-white border-l-8 border-darkviolet rounded-tr-3xl rounded-bl-3xl "
         >
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+          <div className="h-full p-5  shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-3xl text-darkviolet">
-              Social media promotion
+              Référencement Naturel & Payant
             </h6>
             <div className="flex justify-center items-center">
               <Image
@@ -195,9 +199,9 @@ const Services = () => {
               />
             </div>
             <p className="text-sm text-gray-900 text-justify">
-              Maximize your online presence with Devency&apos;s social media
-              expertise. From content creation to strategic campaigns, we
-              connect your brand with the right audience.
+              Optimisez votre présence en ligne avec l&apos;expertise en médias
+              sociaux de Devency. De la création de contenu aux campagnes
+              stratégiques, nous connectons votre marque avec le bon public.
             </p>
           </div>
         </div>
