@@ -25,13 +25,13 @@ const Home = () => {
     );
   };
   useEffect(() => {
-    if (inView && isLaptop()) {
+    if (inView ) {
       title();
     }
   }, [inView]);
   ///////////////title
   useEffect(() => {
-    if (inView && isLaptop()) {
+    if (inView) {
       const tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
       tl.fromTo(
         ".tit",
