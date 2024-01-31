@@ -24,9 +24,9 @@ const Projects = () => {
             <span className="inline-block w-4 h-1 ml-1 bg-lightviolet rounded-full"></span>
           </div>
           <p className="text-base text-gray-400 md:text-lg">
-            En collaboration avec vous, nous définissons des critères objectifs
-            qui nous permettent de juger rationnellement de l&apos;efficacité de
-            nos créations. Voici quelques-unes de nos références !
+            Explorez l&apos;essence de notre expertise à travers nos projets.
+            Découvrez l&apos;innovation, la créativité et l&apos;excellence qui
+            définissent Devency.
           </p>
         </div>
         <div className="h-80 md:h-[500px] flex justify-center px-3">
