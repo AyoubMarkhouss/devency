@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Scrolltop from "@/components/Scrolltop";
 import Bgicons from "@/components/Bgicons";
 import Head from "next/head";
+import Projects from "@/components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,8 @@ export default function Home() {
         <Whyus />
         <Bgicons />
         <Services />
+        <Bgicons />
+        <Projects />
         <Bgicons />
         <Testimonials />
       </main>
