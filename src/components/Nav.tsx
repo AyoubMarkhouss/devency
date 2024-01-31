@@ -153,7 +153,7 @@ export default function App() {
         <div className="flex gap-4 sm:pl-10 text-xl">
           <NavbarItem>
             <Link className=" text-xl tracking-wide " href="/">
-             Acceuil
+              Acceuil
             </Link>
           </NavbarItem>
 
@@ -220,7 +220,19 @@ export default function App() {
               duration={1500}
               offset={-80}
             >
-              Nos Services
+            Services
+            </ScrollLink>
+          </NavbarItem>
+          <NavbarItem>
+            <ScrollLink
+              to="projets"
+              className="cursor-pointer pl-3 text-xl tracking-wide"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              offset={-80}
+            >
+              Projets
             </ScrollLink>
           </NavbarItem>
           <NavbarItem>
@@ -244,7 +256,7 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="mt-5">
+      <NavbarMenu className="mt-5 ">
         {sections.map((item) => (
           <NavbarMenuItem
             key={item.label}

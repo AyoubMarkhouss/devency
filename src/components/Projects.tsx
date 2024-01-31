@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Carousel } from "flowbite-react";
 const Projects = () => {
   return (
-    <div>
+    <div id="projets">
       <div className="relative py-6 md:py-10">
         <div
           className="absolute mt-[150px] inset-0 blur-[135px] max-w-lg h-[700px] mx-auto sm:max-w-5xl sm:h-[700px]"
