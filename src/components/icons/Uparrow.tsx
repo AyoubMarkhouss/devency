@@ -1,6 +1,6 @@
 import React from "react";
 
-function Uparrow({ className }: { className?: string }) {
+function Uparrow({ className }: { className?: string | undefined}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

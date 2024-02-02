@@ -27,7 +27,7 @@ export default function Home() {
         <title>Devency - Home</title>
         <meta property="og:image" content="/dev3white.png" />
       </Head>
-      <main className="min-h-[calc(100vh_-_90px)] bg-[#161A30]">
+      <main className="min-h-[calc(100vh_-_90px)] bg-darkbg ">
         <Homepage />
         <Scrolltop />
         <About />
