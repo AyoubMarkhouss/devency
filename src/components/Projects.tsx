@@ -89,7 +89,7 @@ const Projects = () => {
                   src="/website1.jpg"
                   height={1000}
                   width={1000}
-                  className="rounded-3xl w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
+                  className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
                 />
               </Link>
             </div>
@@ -100,7 +100,7 @@ const Projects = () => {
                   src="/website1.jpg"
                   height={1000}
                   width={1000}
-                  className="rounded-3xl w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
+                  className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
                 />
               </Link>
             </div>
@@ -111,7 +111,7 @@ const Projects = () => {
                   src="/website1.jpg"
                   height={1000}
                   width={1000}
-                  className="rounded-3xl w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
+                  className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
                 />
               </Link>
             </div>
