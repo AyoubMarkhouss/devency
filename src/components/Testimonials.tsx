@@ -6,6 +6,9 @@ const Testimonials = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const isLaptop = () => {
+    return window.innerWidth > 1024; // Set your threshold for laptop devices
+  };
   ////////////////title
   const title = () => {
     gsap.fromTo(
@@ -15,7 +18,7 @@ const Testimonials = () => {
     );
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && isLaptop()) {
       title();
     }
   }, [inView]);
@@ -43,7 +46,7 @@ const Testimonials = () => {
     );
   };
   useEffect(() => {
-    if (inView) {
+    if (inView && isLaptop()) {
       card();
     }
   }, [inView]);
