@@ -5,13 +5,13 @@ import Homepage from "@/components/Homepage";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Whyus from "@/components/Whyus";
-import Devider from "@/components/Devider";
 import Testimonials from "@/components/Testimonials";
 
 import Scrolltop from "@/components/Scrolltop";
 import Bgicons from "@/components/Bgicons";
 import Head from "next/head";
 import Projects from "@/components/Projects";
+import Contactus from "@/components/Contactus";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +39,8 @@ export default function Home() {
         <Projects />
         <Bgicons />
         <Testimonials />
+        <Bgicons />
+        <Contactus />
       </main>
     </>
   );

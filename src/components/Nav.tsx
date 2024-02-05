@@ -220,7 +220,7 @@ export default function App() {
               duration={1500}
               offset={-80}
             >
-            Services
+              Services
             </ScrollLink>
           </NavbarItem>
           <NavbarItem>
@@ -245,14 +245,24 @@ export default function App() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden sm:flex">
-          <Button
+          {/* <Button
             as={Link}
             className="bg-[#9F73AB] text-xl tracking-wide "
             href="/contactpage"
             variant="flat"
           >
             Contactez-nous
-          </Button>
+          </Button> */}
+          <ScrollLink
+            to="contact"
+            className="cursor-pointer rounded-2xl px-3 py-2 bg-[#9F73AB] text-xl tracking-wide "
+            spy={true}
+            smooth={true}
+            duration={1500}
+            offset={-100}
+          >
+            Contactez-nous
+          </ScrollLink>
         </NavbarItem>
       </NavbarContent>
 

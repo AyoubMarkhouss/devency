@@ -51,8 +51,8 @@ const Testimonials = () => {
     }
   }, [inView]);
   return (
-    <div className="relative py-6 md:py-0">
-      <div className="min-w-screen py-10 flex items-center justify-center ">
+    <div className="relative  md:py-0">
+      <div className="min-w-screen  flex items-center justify-center ">
         <div
           className="absolute inset-0 blur-[135px] max-w-lg h-[700px] mx-auto sm:max-w-5xl sm:h-[700px]"
           style={{
@@ -68,7 +68,7 @@ const Testimonials = () => {
                 className="tit2 text-start md:w-1/3 mx-auto flex flex-col justify-center md:h-full mr-10"
               >
                 <div className="z-50 absolute">
-                  <h1 className=" text-3xl md:text-6xl font-bold mb-2 text-white">
+                  <h1 className=" text-3xl md:text-6xl font-bold mb-2 text-white mt-10">
                     Ce que disent nos clients
                   </h1>
 
@@ -89,7 +89,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div className="px-3 md:w-1/3 md:pt-10 pt-10">
+              <div className="px-3 md:w-1/3 md:pt-10 pt-14">
                 <div className="card1 w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">

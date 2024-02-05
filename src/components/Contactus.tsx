@@ -28,7 +28,7 @@ const Contactus: React.FC = () => {
     e.target.reset();
   };
   return (
-    <div className="mx-auto max-w-screen-xl relative">
+    <div className="contact mx-auto max-w-screen-xl relative">
       <div
         className="absolute inset-0 blur-[125px] max-w-lg h-[700px] mx-auto sm:max-w-4xl sm:h-[600px]"
         style={{
@@ -39,8 +39,8 @@ const Contactus: React.FC = () => {
       <div className="container px-2 sm:px-6 md:px-8 lg:px-14 xl:px-36 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6 m-6">
-            <h1 className="text-5xl md:font-semibold text-white  lg:text-6xl ">
-              We&apos;d Love to Hear From You!
+            <h1 className="text-4xl md:font-semibold text-white  lg:text-5xl ">
+              Votre collaboration, notre succès commun!
             </h1>
             <div className="">
               <span className="inline-block w-36 md:w-64 h-1 bg-[#9F73AB] rounded-full"></span>
