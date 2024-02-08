@@ -11,6 +11,7 @@ import Nav from "@/components/Nav";
 import localFont from "next/font/local";
 import { Footer } from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const myfont = localFont({ src: "./Fonts/RedHatDisplay-Regular.woff" });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </main>
     </NextUIProvider>
   );
