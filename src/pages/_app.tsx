@@ -8,18 +8,19 @@ import Nav from "@/components/Nav";
 //   subsets: ["latin"],
 //   weight: "400",
 // });
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 import { Footer } from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 const myfont = localFont({ src: "./Fonts/RedHatDisplay-Regular.woff" });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider>
-      
       <main className={`${myfont.className}`}>
         <Nav />
         <Component {...pageProps} />
-        <Footer/>
+        <Footer />
+        <Analytics />
       </main>
     </NextUIProvider>
   );
