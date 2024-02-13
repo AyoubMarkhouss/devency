@@ -7,9 +7,9 @@ const Services = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-   const isLaptop = () => {
-     return window.innerWidth > 1024; // Set your threshold for laptop devices
-   };
+  const isLaptop = () => {
+    return window.innerWidth > 1024; // Set your threshold for laptop devices
+  };
   const mm = gsap.matchMedia();
   ////////////////title
   const title = () => {
@@ -187,7 +187,7 @@ const Services = () => {
         >
           <div className="h-full p-5  shadow-sm">
             <h6 className="mb-2 font-semibold leading-7 text-3xl text-darkviolet">
-              Référencement Naturel & Payant
+              Optimisation des médias sociaux
             </h6>
             <div className="flex justify-center items-center">
               <Image

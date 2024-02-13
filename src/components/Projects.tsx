@@ -50,7 +50,7 @@ const Projects = () => {
               "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
           }}
         ></div>
-        <div className="z-50 md:absolute px-4 sm:hidden">
+        <div className="z-30 md:absolute px-4 sm:hidden">
           <h1 className=" text-3xl md:text-6xl font-bold mb-2 text-white">
             Nos Projets
           </h1>
@@ -69,17 +69,32 @@ const Projects = () => {
         <div className="col-span-1 h-80 md:h-[500px] flex justify-center px-3 overflow-hidden flex-shrink-0">
           <Carousel ref={ref} className="car" pauseOnHover>
             <div className="flex justify-center items-center ">
-              <Link href="https://devency.vercel.app">
+              <Link href="https://first-theme-sqm5.vercel.app">
                 <Image
                   alt="a"
-                  src="/website1.jpg"
-                  height={1000}
-                  width={1000}
+                  src="/siteweb2.jpg"
+                  height={1600}
+                  width={1600}
                   className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
                 />
               </Link>
             </div>
             <div className="flex justify-center items-center ">
+              <div className="text-center md:text-start">
+                <Image
+                  alt="a"
+                  src="/moujtahid.png"
+                  height={1500}
+                  width={1500}
+                  className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
+                />
+                <h1 className="text-2xl ">Moujtahid</h1>
+                <h1 className="text-xl">
+                  Application de gestion d&apos;établissement scolaire
+                </h1>
+              </div>
+            </div>
+            {/* <div className="flex justify-center items-center ">
               <Link href="https://devency.vercel.app">
                 <Image
                   alt="a"
@@ -89,18 +104,7 @@ const Projects = () => {
                   className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
                 />
               </Link>
-            </div>
-            <div className="flex justify-center items-center ">
-              <Link href="https://devency.vercel.app">
-                <Image
-                  alt="a"
-                  src="/website1.jpg"
-                  height={1000}
-                  width={1000}
-                  className="rounded-lg w-[500px] transition transform hover:-translate-y-3 motion-reduce:hover:transform-none"
-                />
-              </Link>
-            </div>
+            </div> */}
           </Carousel>
         </div>
         <div

@@ -16,14 +16,16 @@ const myfont = localFont({ src: "./Fonts/RedHatDisplay-Regular.woff" });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <NextUIProvider>
-      <main className={`${myfont.className}`}>
-        <Nav />
-        <Component {...pageProps} />
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
-      </main>
-    </NextUIProvider>
+    <>
+      <NextUIProvider>
+        <main className={`${myfont.className}`}>
+          <Nav />
+          <Component {...pageProps} />
+          <Footer />
+        </main>
+      </NextUIProvider>
+      <Analytics />
+      <SpeedInsights />
+    </>
   );
 }

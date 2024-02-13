@@ -51,7 +51,7 @@ const Testimonials = () => {
     }
   }, [inView]);
   return (
-    <div className="relative  md:py-0">
+    <div className="relative pt-16 md:pt-0">
       <div className="min-w-screen  flex items-center justify-center ">
         <div
           className="absolute inset-0 blur-[135px] max-w-lg h-[700px] mx-auto sm:max-w-5xl sm:h-[700px]"
@@ -67,8 +67,8 @@ const Testimonials = () => {
                 ref={ref}
                 className="tit2 text-start md:w-1/3 mx-auto flex flex-col justify-center md:h-full mr-10"
               >
-                <div className="z-50 absolute">
-                  <h1 className=" text-3xl md:text-6xl font-bold mb-2 text-white mt-10">
+                <div className="z-30 absolute">
+                  <h1 className=" text-3xl md:text-6xl font-bold mb-2 text-white ">
                     Ce que disent nos clients
                   </h1>
 
